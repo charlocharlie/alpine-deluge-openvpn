@@ -71,7 +71,7 @@ validate_user() {
         
         # Change ownerships
         chown -R ${uid_name}:${gid_name} /config
-        chown ${uid_name}:${gid_name} /data
+        chown ${uid_name}:${gid_name} /downloads
     fi
 }
 

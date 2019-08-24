@@ -51,7 +51,7 @@ To run the container use this command:
 
 ```
 $ docker run -d \
-              -v /your/storage/path/:/data \
+              -v /your/storage/path/:/downloads \
               -v /your/storage/path/:/config \
               -v /your/storage/path/:/etc/openvpn \
               -v /etc/localtime:/etc/localtime:ro \
@@ -118,7 +118,7 @@ http://192.168.x.x:8080 would show you what's running INSIDE the container on po
 
 * `--net=host` - Shares host networking with container, **required**.
 * `-v /config` - deluge configs
-* `-v /data` - torrent download directory
+* `-v /downloads` - torrent download directory
 * `-e PGID` for for GroupID - see below for explanation
 * `-e PUID` for for UserID - see below for explanation
 * `-e TZ` for timezone information, eg Europe/London
